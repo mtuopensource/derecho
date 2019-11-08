@@ -7,7 +7,7 @@ export default (state = {}, action) => {
 	switch (action.type) {
 		case LOAD_WEATHER_DATA_RESPONSE:
 			return {
-				body: action.payload.body,
+				details: action.payload.body,
 				status: action.payload.status === 200 ?
 					'Success':
 					'Failure',
